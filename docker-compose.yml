@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  work:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    volumes:
+      - "./:/home/foo/work/"
+    tty: true
